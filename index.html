@@ -3,71 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta Hechicería de Ejecución y Brujería Espejo | Maestro San Benito</title>
+    <title>Alta Hechicería de Ejecución y Contraofensiva | Maestro San Benito</title>
     <style>
-        body { background-color: #070707; color: #d1d1d1; font-family: 'Georgia', serif; line-height: 1.8; padding: 40px 20px; max-width: 800px; margin: 0 auto; }
-        h1 { color: #d4af37; font-size: 2.5em; text-align: center; border-bottom: 2px solid #1a1a1a; padding-bottom: 20px; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; }
-        h2 { color: #d4af37; font-size: 1.7em; margin-top: 45px; border-left: 4px dotted #d4af37; padding-left: 15px; margin-bottom: 20px; }
+        body { background-color: #070707; color: #d1d1d1; font-family: 'Georgia', serif; line-height: 1.8; padding: 40px 20px; max-width: 850px; margin: 0 auto; }
+        h1 { color: #d4af37; font-size: 2.3em; text-align: center; border-bottom: 2px solid #1a1a1a; padding-bottom: 20px; margin-bottom: 35px; letter-spacing: 1px; text-transform: uppercase; }
         p { font-size: 1.15em; text-align: justify; margin-bottom: 25px; }
         strong { color: #ffffff; font-weight: bold; }
+        
+        /* SISTEMA DE PESTAÑAS (TABS) */
+        .tabs-container { margin: 40px 0; border: 1px solid #1a1a1a; background-color: #0a0a0a; border-radius: 4px; overflow: hidden; }
+        .tabs-menu { display: flex; flex-wrap: wrap; background-color: #111; border-bottom: 1px solid #222; }
+        .tab-button { background: none; border: none; color: #888; padding: 15px 20px; font-family: 'Georgia', serif; font-size: 1.05em; cursor: pointer; transition: all 0.3s; flex: 1; text-align: center; min-width: 150px; text-transform: uppercase; letter-spacing: 1px; }
+        .tab-button:hover { color: #fff; background-color: #151515; }
+        .tab-button.active { color: #d4af37; background-color: #0a0a0a; font-weight: bold; border-bottom: 2px solid #d4af37; }
+        
+        .tab-content { display: none; padding: 30px; }
+        .tab-content.active { display: block; animation: fadeIn 0.5s; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        h3.tab-title { color: #d4af37; font-size: 1.5em; margin-top: 0; margin-bottom: 20px; text-transform: uppercase; border-left: 3px dotted #d4af37; padding-left: 15px; }
         ul { margin-bottom: 30px; padding-left: 20px; }
         li { font-size: 1.1em; margin-bottom: 12px; list-style-type: square; color: #d4af37; }
         li span { color: #d1d1d1; }
-        .nota-forense { border-left: 3px dotted #d4af37; padding: 15px 20px; margin: 35px 0; font-style: italic; background-color: #111; color: #fff; }
-        .cta-box { border: 1px solid #d4af37; padding: 35px; background-color: #121212; text-align: center; margin-top: 60px; border-radius: 4px; }
-        .cta-box h3 { color: #ffffff; font-size: 1.5em; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; }
-        .cta-button { display: inline-block; padding: 15px 40px; background-color: #d4af37; color: #070707; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 20px; border-radius: 2px; }
+        
+        .manifiesto-autoridad { border-left: 3px dotted #d4af37; padding: 15px 20px; margin: 35px 0; font-style: italic; background-color: #111; color: #fff; }
+        .cta-box { border: 1px solid #d4af37; padding: 35px; background-color: #121212; text-align: center; margin-top: 50px; border-radius: 4px; }
+        .cta-box h4 { color: #ffffff; font-size: 1.5em; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; }
+        .cta-button { display: inline-block; padding: 15px 40px; background-color: #d4af37; color: #070707; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 20px; border-radius: 2px; transition: background 0.3s; }
+        .cta-button:hover { background-color: #f1c40f; }
     </style>
 </head>
 <body>
 
-    <h1>Maestro San Benito: Brujería de Ejecución y Contraofensiva de Grado Terminus</h1>
+    <h1>Maestro San Benito: Protocolos Operativos de la Logia Nigromante</h1>
 
-    <p>En el entramado de las fuerzas ocultas, la línea que divide la creación de la destrucción no se rige por la moral ordinaria, sino por las leyes de la <strong>causalidad y el poder real</strong>. Quienes intentan prosperar en un entorno hostil descubren, tarde o temprano, que la defense pasiva es insuficiente. Cuando el asedio de la envidia, los ataques deliberados de enemigos biológicos o las intervenciones de terceros rompen la estabilidad de su vida, se requiere la acción directa de la <strong>Alta Hechicería Negra y Operativa</strong>.</p>
+    <p>En el entramado de las fuerzas ocultas, la línea que divide la creación de la destrucción no se rige por la moral ordinaria, sino por las leyes de la <strong>causalidad y el poder real</strong>. Quienes intentan prosperar en un entorno hostil descubren, tarde o temprano, que la defensa pasiva es insuficiente. Cuando el asedio de la envidia, los ataques deliberados de enemigos o las intervenciones de terceros rompen la estabilidad de su vida, se requiere la acción directa de la <strong>Alta Hechicería Negra y Operativa</strong>.</p>
 
-    <p>El <strong>Maestro San Benito</strong>, con una trayectoria ininterrumpida liderando la Logia Nigromante, ejecuta protocolos avanzados donde la magia tradicional fracasa. No nos limitamos a disipar los síntomas de un daño; reescribimos el equilibrio de fuerzas mediante intervenciones contundentes de venganza, destierro y aniquilación de la mala voluntad ajena. Si un adversario ha decidido cruzar la línea para causar la ruina de su hogar, de sus finanzas o de su estabilidad afectiva, nuestra respuesta no es el perdón: es la <strong>justicia retributiva absoluta</strong>.</p>
+    <p>El <strong>Maestro San Benito</strong> ejecuta protocolos avanzados donde la magia tradicional de mercado fracasa. No nos limitamos a disipar los síntomas de un daño; reescribimos el equilibrio de fuerzas mediante intervenciones contundentes de venganza, destierro y aniquilación de la mala voluntad ajena. Si un adversario ha decidido cruzar la línea para causar la ruina de su hogar, de sus finanzas o de su estabilidad afectiva, nuestra respuesta no es el perdón: es la <strong>justicia retributiva absoluta</strong>.</p>
 
-    <h2>Brujería de Venganza y Destierro: Ley de Extracción de Enemigos</h2>
-    
-    <p>Existen escenarios donde la convivencia es matemáticamente inviable. Vecinos conflictivos que pudren el entorno, enemigos declarados que operan en las sombras para minar su reputación, o individuos tóxicos que actúan como parásitos sobre su infraestructura personal. Para estos casos, el Maestro San Benito aplica la <strong>brujería de destierro y aislamiento forzado</strong>.</p>
+    <!-- NÚCLEO INTERACTIVO DE PESTAÑAS -->
+    <div class="tabs-container">
+        <div class="tabs-menu">
+            <button class="tab-button active" onclick="openTab(event, 'venganza')">Venganza y Destierro</button>
+            <button class="tab-button" onclick="openTab(event, 'espejo')">Brujería Espejo</button>
+            <button class="tab-button" onclick="openTab(event, 'rechazo')">Sistema de Rechazo</button>
+            <button class="tab-button" onclick="openTab(event, 'infidelidad')">Infidelidades y Lazos</button>
+        </div>
 
-    <p>A través de velaciones y mandatos de alta densidad, se altera la frecuencia del entorno del enemigo, generando una incomodidad orgánica e insostenible en su psique. El objetivo experimenta un rechazo sistemático por parte del espacio que habita o del puesto que ocupa, obligándolo a replegarse, mudarse o desaparecer de su línea de tiempo. No se trata de una sugerencia; es una expulsión metafísica ejecutable.</p>
+        <!-- PESTAÑA 1: VENGANZA Y DESTIERRO -->
+        <div id="venganza" class="tab-content active">
+            <h3 class="tab-title">Ley de Extracción y Aislamiento de Enemigos</h3>
+            <p>Existen escenarios donde la convivencia es matemáticamente inviable. Vecinos conflictivos que pudren el entorno, competidores desleales que operan en las sombras para minar su reputación, o individuos que actúan como parásitos sobre su infraestructura personal. Para estos casos, aplicamos la <strong>brujería de destierro y aislamiento forzado</strong>.</p>
+            <p>A través de velaciones y mandatos de alta densidad, se altera la frecuencia del entorno del enemigo, generando una incomodidad orgánica e insostenible en su psique. El objetivo experimenta un rechazo sistemático por parte del espacio que habita o del puesto que ocupa, obligándolo a replegarse, mudarse o desaparecer de su línea de tiempo. No se trata de una sugerencia; es una expulsión metafísica ejecutable.</p>
+        </div>
 
-    <p>Cuando el daño ya ha sido consumado mediante traiciones o infidelidades calculadas, la <strong>brujería de venganza</strong> actúa como el brazo ejecutor. Rompemos las alianzas ilegítimas, exponemos al infiel ante su propio rastro de engaño y sembramos la discordia en los núcleos que pretendían dañarle. La venganza bajo la tutela de la Logia Nigromante es un proceso quirúrgico: devolvemos la desolación multiplicada al emisor originario, asegurando que el precio de su osadía sea pagado en su totalidad.</p>
+        <!-- PESTAÑA 2: BRUJERÍA ESPEJO -->
+        <div id="espejo" class="tab-content">
+            <h3 class="tab-title">Brujería Espejo en Grado Terminus</h3>
+            <p>El pilar más audaz de nuestra consultoría es la <strong>Brujería Espejo Especializada</strong>. Este protocolo está diseñado específicamente para neutralizar a los operadores de baja jerarquía (brujos negros de pacotilla, timadores y charlatanes) contratados por sus enemigos para causarle la ruina, la pobreza o la desolación mediante velaciones satánicas de destrucción.</p>
+            <p>El Espejo no es una barrera pasiva; es un dispositivo de captura y redirección de alta precisión que opera bajo una estrategia milimétrica:</p>
+            <ul>
+                <li><strong>Aislamiento del Efecto:</strong> <span>Atrapa la carga de la velación dañina en el instante preciso de su emisión, impidiendo de forma absoluta que toque el cuerpo, la mente o las finanzas de nuestro cliente.</span></li>
+                <li><strong>Captura del Operador:</strong> <span>Enlaza la signatura energética del brujo contratado por el enemigo, absorbiendo su fuerza y congelando su capacidad de ejecución. Su magia se vuelve estéril.</span></li>
+                <li><strong>Descrédito y Ruina del Enemigo:</strong> <span>Al ver que las velaciones de ruina y desolación no surten efecto en usted, la persona que pagó y contrató a ese brujo negro asumirá de inmediato que ha sido engañada. El cliente del agresor lo tachará públicamente de charlatán, estafador y embustero, desatando un conflicto interno que destruye la reputación del operario y quiebra la alianza entre ellos. Dejamos que su propio fracaso los destruya.</span></li>
+            </ul>
+        </div>
 
-    <div class="nota-forense">
+        <!-- PESTAÑA 3: RECHAZO -->
+        <div id="rechazo" class="tab-content">
+            <h3 class="tab-title">El Protocolo de Rechazo Integral</h3>
+            <p>La protección ordinaria es un muro que resiste los golpes hasta que se agrieta. El <strong>Protocolo de Rechazo</strong> diseñado por el Maestro San Benito opera de manera radicalmente distinta: altera la naturaleza del campo etérico del consultante para que el daño, la salación o el decreto de ruina se vuelvan incapaces de encontrar un punto de anclaje material.</p>
+            <p>Al implementar el rechazo, cualquier trabajo de hechicería negra, entierro o amarre forzado lanzado en su contra pierde su vector de dirección. La energía negativa simplemente no le registra en su radar. Pasa de largo. Usted se vuelve invisible e invulnerable ante los ataques psíquicos y la brujería de baja estofa que abunda en el mercado esotérico. Mientras sus detractores consumen sus recursos y su tiempo intentando doblegarle, su vida permanece intacta.</p>
+        </div>
+
+        <!-- PESTAÑA 4: INFIDELIDAD -->
+        <div id="infidelidad" class="tab-content">
+            <h3 class="tab-title">Intervención en Núcleos Afectivos y Traición</h3>
+            <p>Cuando el daño ya ha sido consumado mediante traiciones o infidelidades calculadas, la brujería de ejecución actúa como el brazo ejecutor legítimo. Rompemos las alianzas ilegítimas, exponemos al infiel ante su propio rastro de engaño y sembramos la discordia en los núcleos que pretendían dañarle de forma deliberada.</p>
+            <p>La intervención bajo la tutela de la Logia Nigromante es un proceso quirúrgico: devolvemos la desolación multiplicada al emisor originario, asegurando que el precio de su osadía sea pagado en su totalidad en el plano terrenal. Cortamos los lazos parasitarios y devolvemos la soberanía a quien fue traicionado.</p>
+        </div>
+    </div>
+
+    <div class="manifiesto-autoridad">
         "La verdadera justicia no espera la intervención de un destino abstracto. Se ejecuta en el plano terrenal mediante protocolos de alta jerarquía que tuercen la realidad a favor de la víctima." — Maestro San Benito.
     </div>
 
-    <h2>El Protocolo de Rechazo Integral</h2>
-    
-    <p>La protección ordinaria es un muro que resiste los golpes hasta que se agrieta. El <strong>Protocolo de Rechazo</strong> diseñado por el Maestro San Benito opera de manera radicalmente distinta: altera la naturaleza del campo etérico del consultante para que el daño, la salación o el decreto de ruina se vuelvan incapaces de encontrar un punto de anclaje material.</p>
-    
-    <p>Al implementar el rechazo, cualquier trabajo de hechicería negra, entierro o amarre forzado lanzado en su contra pierde su vector de dirección. La energía negativa simplemente no le registra en su radar. Pasa de largo. Usted se vuelve invisible e invulnerable ante los ataques psíquicos y la brujería de baja estofa que abunda en el mercado esotérico. Mientras sus detractores consumen sus recursos y su tiempo intentando doblegarle, su vida permanece intacta, expandiendo su capital y consolidando su soberanía existencial.</p>
+    <p>Usted no tiene por qué tolerar la interferencia de la mediocridad ni los ataques de los "don nadies" del entorno esotérico. La alta hechicería del Maestro San Benito proporciona el blindaje definitivo para quienes exigen vivir bajo sus propios términos, protegidos por un sistema de justicia retributiva inexpugnable. Cada operación se trabaja sin intermediarios, con un diagnóstico oracular inicial y bajo el más estricto secreto de identidad.</p>
 
-    <h2>Brujería Espejo en Grado Terminus: La Trampa para el Brujo Negro</h2>
-    
-    <p>El pilar más audaz de nuestra consultoría es, sin duda, la <strong>Brujería Espejo Especializada</strong>. Este protocolo de Grado Terminus está diseñado específicamente para neutralizar a los operadores de baja jerarquía (brujos negros, timadores y charlatanes) contratados por sus enemigos para causarle la ruina, la pobreza o la desolación mediante velaciones satánicas de destrucción.</p>
-
-    <p>El Espejo no es una barrera pasiva; es un dispositivo de captura y redirección forense que opera bajo una estrategia milimétrica:</p>
-
-    <ul>
-        <li><strong>Aislamiento del Efecto:</strong> <span>Atrapa la carga de la velación dañina en el instante preciso de su emisión, impidiendo de forma absoluta que toque el cuerpo, la mente o las finanzas de nuestro cliente.</span></li>
-        <li><strong>Captura del Operador:</strong> <span>Enlaza la signatura energética del brujo contratado, absorbiendo su fuerza y congelando su capacidad de ejecución. Su magia se vuelve estéril.</span></li>
-        <li><strong>Descrédito y Ruina del Enemigo:</strong> <span>Al ver que las velaciones de ruina y desolación no surten efecto en usted, la persona que pagó y contrató a ese brujo negro asumirá de inmediato que ha sido engañada. El cliente del agresor lo tachará públicamente de charlatán, estafador y embustero, desatando un conflicto interno que destruye la reputación del operario y quiebra la alianza del mal entre ellos.</span></li>
-    </ul>
-
-    <p>Es una estocada de alta ingeniería espiritual. En lugar de entablar una guerra de desgaste contra el brujo agresor, dejamos que su propio fracaso lo aniquile ante los ojos de quien le paga. El enemigo retira sus fondos, el brujo queda expuesto como un don nadie incompetente y usted se deshace de la escoria que pretendía perturbar su paz sin haber movido un solo dedo en el plano físico.</p>
-
-    <h2>Soberanía Absoluta bajo la Logia Nigromante</h2>
-    
-    <p>Usted no tiene por qué tolerar la interference de la mediocridad. La alta hechicería del Maestro San Benito proporciona el blindaje definitivo para quienes exigen vivir bajo sus propios términos, protegidos por un system de justicia retributiva inexpugnable. Cada operación se trabaja sin intermediarios, con un diagnóstico oracular inicial y bajo el más estricto secreto de identidad.</p>
-
+    <!-- BLOQUE DE CONTACTO DIRECTO -->
     <div class="cta-box">
-        <h3>Active la Contraofensiva Espejo de Grado Terminus</h3>
+        <h4>Active la Contraofensiva Espejo de Grado Terminus</h4>
         <p>No permita que la salación, la deslealtad o los brujos negros detengan su expansión. Establezca el veto definitivo sobre sus enemigos hoy mismo.</p>
-        <a href="https://wa.me/525612066194" target="_blank" class="cta-button">Iniciar Saneamiento Forense</a>
+        <a href="https://wa.me/525612066194" target="_blank" class="cta-button">Iniciar Consulta Diagnóstica</a>
     </div>
+
+    <!-- PROGRAMACIÓN INTERNA DE PESTAÑAS -->
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).className += " active";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
 </body>
 </html>
